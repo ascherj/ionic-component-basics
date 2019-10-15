@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Courses</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css" />
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>My Courses</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="6" offset="1">
+                        <ion-list>
+                            <ion-item>
+                                <ion-label position="floating">Course Name</ion-label>
+                                <ion-input type="text" id="course-name-input"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label position="floating">Course Rating (1 - 5)</ion-label>
+                                <ion-input type="number" id="course-rating-input"></ion-input>
+                            </ion-item>
+                            <ion-button id="add-btn">ADD</ion-button>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="6" offset="1">
+                        <ion-list id="my-courses-list"></ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+        <ion-alert-controller></ion-alert-controller>
+    </ion-app>
+    <script src="./app.js"></script>
+</body>
+</html>
